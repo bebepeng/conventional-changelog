@@ -12,6 +12,7 @@ function generate(options, done) {
     to: 'HEAD',
     file: 'CHANGELOG.md',
     subtitle: '',
+    changeLevels: ['fix', 'feature', 'breaking'],
     log: console.log.bind(console),
   }, options || {});
 
